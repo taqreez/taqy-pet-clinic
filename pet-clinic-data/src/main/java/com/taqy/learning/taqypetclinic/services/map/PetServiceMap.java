@@ -1,11 +1,11 @@
 package com.taqy.learning.taqypetclinic.services.map;
 
 import com.taqy.learning.taqypetclinic.model.Pet;
-import com.taqy.learning.taqypetclinic.services.CrudService;
+import com.taqy.learning.taqypetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
