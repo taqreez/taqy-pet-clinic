@@ -2,9 +2,11 @@ package com.taqy.learning.taqypetclinic.services.map;
 
 import com.taqy.learning.taqypetclinic.model.Owner;
 import com.taqy.learning.taqypetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {

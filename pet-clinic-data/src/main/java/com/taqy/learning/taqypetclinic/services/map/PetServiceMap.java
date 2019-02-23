@@ -2,9 +2,11 @@ package com.taqy.learning.taqypetclinic.services.map;
 
 import com.taqy.learning.taqypetclinic.model.Pet;
 import com.taqy.learning.taqypetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
